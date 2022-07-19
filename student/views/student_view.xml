@@ -7,14 +7,14 @@
 			<field name="model">pg.student</field>
 			<field name="priority" eval="8" />
 			<field name="arch" type="xml">
-				<form string="Student" version="7.0">
-					<header>
-						<span>
-                            <field name="name"/>
-                        </span>
-					</header>
-					
-
+				<form string="Student" version="7.0">	
+					<sheet>
+						<group col="4" colspan="4">
+							<field name="name"/>
+							<field name="roll_number"/>
+							<field name="language"/>
+						</group>
+					</sheet>
 				</form>
 			</field>
 		</record>
@@ -60,13 +60,13 @@
 
         
         <menuitem id="menu_student" name="Students"
-		     sequence="0" groups="base.group_user"/>
-        <menuitem id="submenu_student" name="Student" sequence="1" parent="menu_student" action="act_open_student_view" groups="base.group_user"/>
+		     sequence="0" groups="group_student_manager"/>
+        <menuitem id="submenu_student" name="Student" sequence="1" parent="menu_student" action="act_open_student_view" groups="group_student_manager"/>
 
 
 		<menuitem id="menu_action_student" name="Students"
 			parent="submenu_student" sequence="20"
-			action="act_open_student_view" groups="base.group_user" />
+			action="act_open_student_view" groups="group_student_manager" />
 
         
 
