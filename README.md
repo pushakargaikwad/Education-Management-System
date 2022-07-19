@@ -6,6 +6,9 @@ Open Source Education Management System modules based on top of Odoo. It can be 
 - Each Module has its own separate folder, and can be installed separately.
 - Installation Steps are the same as for any standard Odoo Custom module
 
+## Note WIP 🚧
+Please note this repository is WIP. You can however start using the modules. You can also contribute to the development of the modules.
+Odoo 14.0 is being used as the base version for development. But you can use other version of Odoo too.
 ## Licenses
 
 This repository is licensed under [AGPL-3.0](LICENSE).
