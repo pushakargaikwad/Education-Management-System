@@ -14,6 +14,9 @@
 							<field name="roll_number"/>
 							<field name="language"/>
 						</group>
+						<group col="4" colspan="4">
+							<field name="active" widget="boolean_toggle"/>
+						</group>
 					</sheet>
 				</form>
 			</field>
@@ -26,7 +29,7 @@
 				<tree string="Student">
 					<field name="roll_number"/>
 					<field name="name" />
-
+					<field name="active" />
 				</tree>
 			</field>  		
 		</record>
