@@ -18,19 +18,34 @@
 				</form>
 			</field>
 		</record>
-        		<record id="view_student_tree" model="ir.ui.view">
+        <record id="view_student_tree" model="ir.ui.view">
 			<field name="name">Student tree</field>
 			<field name="model">pg.student</field>
 			<field name="priority" eval="8" />
 			<field name="arch" type="xml">
 				<tree string="Student">
-					
+					<field name="roll_number"/>
 					<field name="name" />
 
 				</tree>
+			</field>  		
+		</record>
+		<record id="view_student_search" model="ir.ui.view">
+			<field name="name">Student Search</field>
+			<field name="model">pg.student</field>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<search string="Student">
+					<field name="name" />
+					<field name="roll_number" />
+					<group expand="0" string="Group By">
+                        <filter name="language" string="Language" domain="[]" context="{'group_by': 'language'}"/>
+                    </group>
+					<searchpanel>
+                        <field name="language" icon="fa-users" enable_counters="1"/> 
+                    </searchpanel>
+				</search>
 			</field>
-
-            		
 		</record>
 
         <record model="ir.actions.act_window" id="act_open_student_view">
@@ -39,6 +54,7 @@
 			<field name="res_model">pg.student</field>
 			<field name="binding_view_types">form</field>
 			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_student_search" />
 			<field name="domain">[]</field>
 			<field name="context">{}</field>
 		</record>
