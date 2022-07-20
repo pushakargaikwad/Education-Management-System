@@ -1,0 +1,9 @@
+<openerp>
+    <data>
+        <menuitem id="menu_ems" name="EMS" sequence="0" />
+
+        <menuitem id="menu_ems_configuration" name="Configuration" sequence="1" parent="menu_ems" groups="group_configuration_manager"/>
+
+    </data>
+
+</openerp>
