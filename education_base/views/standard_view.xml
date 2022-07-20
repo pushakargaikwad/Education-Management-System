@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        <!--Standard View-->
+        <!--
+            Quickest way to autogenerate default form and tree views for a model. Below lines are enough.
+        -->
+        <record model="ir.actions.act_window" id="action_standard_view">
+            <field name="name">Standard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ems.standard</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+            
+            <menuitem id="menu_standard" name="Standard" parent="menu_ems_configuration" action="action_standard_view"
+            groups="group_configuration_manager"
+            sequence="30"
+            />
+    </data>
+</openerp>
