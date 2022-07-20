@@ -20,8 +20,8 @@
 						<notebook colspan="4">
 							<page string="Academic Information">
 								<group col="4" colspan="4">
-									<field name="course_id"/>
-									<field name="standard_id"/>
+									<field name="course_id" options='{"no_open": True, "no_create": True}'/>
+									<field name="standard_id" options='{"no_open": True, "no_create": True}'/>
 								</group>
 							</page>
 						</notebook>
