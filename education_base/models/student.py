@@ -1,7 +1,7 @@
 from odoo import models, fields, api, _
 
-class Student(models.Model):
-    _name = 'pg.student'
+class EMSStudent(models.Model):
+    _name = 'ems.student'
     _description = 'Student'
     _order = 'roll_number'
 

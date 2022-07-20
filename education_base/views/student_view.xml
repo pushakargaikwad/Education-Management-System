@@ -4,7 +4,7 @@
 
 		<record id="view_student_form" model="ir.ui.view">
 			<field name="name">Student Form</field>
-			<field name="model">pg.student</field>
+			<field name="model">ems.student</field>
 			<field name="priority" eval="8" />
 			<field name="arch" type="xml">
 				<form string="Student" version="7.0">	
@@ -23,7 +23,7 @@
 		</record>
         <record id="view_student_tree" model="ir.ui.view">
 			<field name="name">Student tree</field>
-			<field name="model">pg.student</field>
+			<field name="model">ems.student</field>
 			<field name="priority" eval="8" />
 			<field name="arch" type="xml">
 				<tree string="Student">
@@ -35,7 +35,7 @@
 		</record>
 		<record id="view_student_search" model="ir.ui.view">
 			<field name="name">Student Search</field>
-			<field name="model">pg.student</field>
+			<field name="model">ems.student</field>
 			<field name="priority" eval="8" />
 			<field name="arch" type="xml">
 				<search string="Student">
@@ -54,7 +54,7 @@
         <record model="ir.actions.act_window" id="act_open_student_view">
 			<field name="name">Students</field>
 			<field name="type">ir.actions.act_window</field>
-			<field name="res_model">pg.student</field>
+			<field name="res_model">ems.student</field>
 			<field name="binding_view_types">form</field>
 			<field name="view_mode">tree,form</field>
 			<field name="search_view_id" ref="view_student_search" />
