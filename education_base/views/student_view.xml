@@ -78,7 +78,7 @@
 		</record>
 
         
-        <menuitem id="menu_student" name="Students"
+        <menuitem id="menu_student" name="Students" parent="menu_ems"
 		     sequence="0" groups="group_student_manager"/>
         <menuitem id="submenu_student" name="Student" sequence="1" parent="menu_student" action="act_open_student_view" groups="group_student_manager"/>
 
