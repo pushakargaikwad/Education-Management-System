@@ -10,3 +10,7 @@ class EMSStudent(models.Model):
     roll_number = fields.Char(string='Roll Number')
     language = fields.Many2one('res.lang', string='Mother Tongue')
     active = fields.Boolean(string='Active', default=True, help='If unchecked, it will allow you to hide the student record without removing it.')
+
+    # Academic Information
+    course_id = fields.Many2one('ems.course', string='Course')
+    standard_id = fields.Many2one('ems.standard', string='Standard')

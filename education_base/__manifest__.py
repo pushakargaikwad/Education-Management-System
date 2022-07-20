@@ -11,7 +11,7 @@
     'category': 'Education',
     'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','web'],
-    'data': ['security/security.xml','security/ir.model.access.csv','views/menus_view.xml','views/student_view.xml','views/academic_year_view.xml'],
+    'data': ['security/security.xml','security/ir.model.access.csv','views/menus_view.xml','views/student_view.xml','views/academic_year_view.xml','views/course_view.xml'],
     'demo': [],
     'qweb': [ ],
     'author': 'Pushakar Gaikwad',

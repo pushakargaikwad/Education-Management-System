@@ -17,6 +17,16 @@
 						<group col="4" colspan="4">
 							<field name="active" widget="boolean_toggle"/>
 						</group>
+						<notebook colspan="4">
+							<page string="Academic Information">
+								<group col="4" colspan="4">
+									<field name="course_id"/>
+									<field name="standard_id"/>
+								</group>
+							</page>
+						</notebook>
+								
+
 					</sheet>
 				</form>
 			</field>
@@ -41,11 +51,19 @@
 				<search string="Student">
 					<field name="name" />
 					<field name="roll_number" />
+					<field name="active" />
+					<field name="course_id" />
+					<field name="standard_id" />
+
 					<group expand="0" string="Group By">
                         <filter name="language" string="Language" domain="[]" context="{'group_by': 'language'}"/>
+						<filter name="course_id" string="Course" domain="[]" context="{'group_by': 'course_id'}"/>
+						<filter name="standard_id" string="Standard" domain="[]" context="{'group_by': 'standard_id'}"/>
                     </group>
 					<searchpanel>
-                        <field name="language" icon="fa-users" enable_counters="1"/> 
+						<field name="course_id" icon="fa-users" enable_counters="1"/>
+						<field name="standard_id" icon="fa-users" enable_counters="1"/>
+						<field name="language" icon="fa-users" enable_counters="1"/> 
                     </searchpanel>
 				</search>
 			</field>

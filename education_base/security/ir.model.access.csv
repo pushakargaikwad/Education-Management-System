@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_student,access_student,model_ems_student,education_base.group_student_manager,1,1,1,0
 configure_academic_year,configure_academic_year,model_academic_year,education_base.group_configuration_manager,1,1,1,0
+configure_course,configure_course,model_ems_course,education_base.group_configuration_manager,1,1,1,0
+configure_standard,configure_standard,model_ems_standard,education_base.group_configuration_manager,1,1,1,0
