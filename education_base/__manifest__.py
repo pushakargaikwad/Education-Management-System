@@ -2,7 +2,7 @@
 
 {
     'name' : 'Education Base',
-    'version' : '1.0.1',
+    'version' : '1.0.2',
     'summary': 'Base module for Education Management System',
     'sequence': 30,
     'description': """
