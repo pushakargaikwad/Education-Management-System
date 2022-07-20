@@ -1,9 +1,9 @@
 # See LICENSE file for full copyright and licensing details.
 
 {
-    'name' : 'Student Module',
+    'name' : 'Education Base',
     'version' : '1.0.0',
-    'summary': 'Student Module',
+    'summary': 'Base module for Education Management System',
     'sequence': 30,
     'description': """
         Student Module
