@@ -8,9 +8,9 @@ Open Source Education Management System modules based on top of Odoo. It can be 
 
 ## Note WIP 🚧
 Please note this repository is WIP. You can however start using the modules. You can also contribute to the development of the modules.
-The original Education Management System was developed on top of OpenERP 7 and Odoo 8. While those systems have been successfully used in multiple institutes, it is now time to upgrade to Odoo 14 and beyond. 
+The original Education Management System was developed on top of OpenERP 7 and Odoo 8. While those systems have been successfully used in multiple institutes, it is now time to upgrade to Odoo 15 and beyond. 
 All the modules are being completely rewritten and optimised with the experience of past few years of working with Educational Institutes. 
-Odoo 14.0 is being used as the base version for development. But you can use other version of Odoo too.
+Odoo 15.0 is being used as the base version for development.
 ## Licenses
 
 This repository is licensed under [AGPL-3.0](LICENSE).
