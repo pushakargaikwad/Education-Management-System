@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <record id="ems_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">Res Settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="40"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                 <div class="app_settings_block" data-string="EMS"
+                     string="EMS Settings"
+                     data-key="ems_settings"
+                     groups="education_base.group_configuration_manager"
+                     id="ems_setting">
+                    <h1> EMS - Education Management System</h1>
+                        <h2>Localization</h2>
+                            <div class="row mt16 o_settings_container" name="localization_setting_container">
+                                <div class="col-12 col-lg-6 o_setting_box" id="indian_localization">
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_l10n_in_education"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_l10n_in_education">
+                                            <span class="o_setting_label_text">Indian Localization</span>
+                                        </label>
+                                        <p class="o_setting_help">
+                                            <span class="o_setting_help_text">
+                                                This module will enable the Indian localization for Education Management System.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                 </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="ems_config_settings_action" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="ems_res_config_settings_view_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'education_base'}</field>
+    </record>
+</openerp>
