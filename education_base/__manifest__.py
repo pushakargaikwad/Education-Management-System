@@ -2,7 +2,7 @@
 
 {
     'name' : 'Education Base',
-    'version' : '1.0.2',
+    'version' : '1.1.3',
     'summary': 'Base module for Education Management System',
     'sequence': 30,
     'description': """
@@ -10,7 +10,7 @@
     """,
     'category': 'Education',
     'website': 'https://pushakar.com/odoo-development/',
-    'depends' : ['base','web'],
+    'depends' : ['base','web','pg_gender'],
     'data': ['security/security.xml','security/ir.model.access.csv','views/menus_view.xml','views/student_view.xml','views/academic_year_view.xml','views/course_view.xml','views/standard_view.xml'],
     'demo': [],
     'qweb': [ ],

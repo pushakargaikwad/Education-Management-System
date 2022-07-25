@@ -13,6 +13,7 @@
 							<field name="name"/>
 							<field name="roll_number"/>
 							<field name="language"/>
+							<field name="gender" options='{"no_open": True, "no_create": True}'/>
 						</group>
 						<group col="4" colspan="4">
 							<field name="active" widget="boolean_toggle"/>
@@ -40,6 +41,7 @@
 					<field name="roll_number"/>
 					<field name="name" />
 					<field name="active" />
+					<field name="gender" />
 				</tree>
 			</field>  		
 		</record>
@@ -54,16 +56,20 @@
 					<field name="active" />
 					<field name="course_id" />
 					<field name="standard_id" />
+					<field name="gender"/>
+
 
 					<group expand="0" string="Group By">
                         <filter name="language" string="Language" domain="[]" context="{'group_by': 'language'}"/>
 						<filter name="course_id" string="Course" domain="[]" context="{'group_by': 'course_id'}"/>
 						<filter name="standard_id" string="Standard" domain="[]" context="{'group_by': 'standard_id'}"/>
+						<filter name="gender" string="Gender" domain="[]" context="{'group_by': 'gender'}"/>
                     </group>
 					<searchpanel>
 						<field name="course_id" icon="fa-users" enable_counters="1"/>
 						<field name="standard_id" icon="fa-users" enable_counters="1"/>
-						<field name="language" icon="fa-users" enable_counters="1"/> 
+						<field name="language" icon="fa-users" enable_counters="1"/>
+						<field name="gender" icon="fa-users" enable_counters="1"/> 
                     </searchpanel>
 				</search>
 			</field>
