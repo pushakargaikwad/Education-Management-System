@@ -14,9 +14,13 @@
 							<field name="roll_number"/>
 							<field name="language"/>
 							<field name="gender" options='{"no_open": True, "no_create": True}'/>
+							<field name="birth_date"/>
+							<field name="place_of_birth"/>
+							<field name="blood_group"/>
 						</group>
 						<group col="4" colspan="4">
 							<field name="active" widget="boolean_toggle"/>
+							<field name="is_alumni" widget="boolean_toggle"/>
 						</group>
 						<notebook colspan="4">
 							<page string="Academic Information">
@@ -57,6 +61,14 @@
 					<field name="course_id" />
 					<field name="standard_id" />
 					<field name="gender"/>
+					<separator/>
+					<filter name="" string="Alumni" domain="[('is_alumni','=','True')]"
+						help="Display All Alumni Student list" />
+					<filter name="" string="Active" domain="[('active','=','True')]"
+						help="Display Active Student list" />
+					<filter name="" string="Inactive" domain="[('active','=','False')]"
+						help="Display Inactive Student list" />
+					
 
 
 					<group expand="0" string="Group By">
@@ -64,6 +76,7 @@
 						<filter name="course_id" string="Course" domain="[]" context="{'group_by': 'course_id'}"/>
 						<filter name="standard_id" string="Standard" domain="[]" context="{'group_by': 'standard_id'}"/>
 						<filter name="gender" string="Gender" domain="[]" context="{'group_by': 'gender'}"/>
+						<filter name="blood_group" string="Blood Group" domain="[]" context="{'group_by': 'blood_group'}"/>
                     </group>
 					<searchpanel>
 						<field name="course_id" icon="fa-users" enable_counters="1"/>
@@ -71,6 +84,8 @@
 						<field name="language" icon="fa-users" enable_counters="1"/>
 						<field name="gender" icon="fa-users" enable_counters="1"/> 
                     </searchpanel>
+					
+					
 				</search>
 			</field>
 		</record>
