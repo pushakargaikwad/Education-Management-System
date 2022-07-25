@@ -16,7 +16,9 @@ class EMSStudent(models.Model):
     blood_group = fields.Selection([('A+','A+'),('A-','A-'),('B+','B+'),('B-','B-'),('O+','O+'),('O-','O-'),('AB+','AB+'),('AB-','AB-')], string='Blood Group')
     is_alumni = fields.Boolean('Alumni Student?')
 
-
+    # Documents
+    passport_no = fields.Char(string='Passport No.')
+    driving_license_no = fields.Char(string='Driving License No.')
 
 
     # Academic Information

@@ -29,6 +29,13 @@
 									<field name="standard_id" options='{"no_open": True, "no_create": True}'/>
 								</group>
 							</page>
+							<page name="Documents" string="Documents">
+                        			<group col="4" colspan="4">
+										<field name="passport_no"/>
+                            			<field name="driving_license_no"/>
+									</group>
+								
+							</page>
 						</notebook>
 								
 
