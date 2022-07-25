@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        <record id="view_student_form_l10n_in_inherit" model="ir.ui.view">
+            <field name="model">ems.student</field>
+            <field name="inherit_id" ref="education_base.view_student_form" />
+            <field name="arch" type="xml">
+                <field name="passport_no" position="before">
+                    <field name="pan_card_no"/>
+                    <field name="aadhaar_card_no"/>
+
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
+                
+                
