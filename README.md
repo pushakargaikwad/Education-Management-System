@@ -5,6 +5,7 @@ Open Source Education Management System modules based on top of Odoo. It can be 
 ## Installation
 - Each Module has its own separate folder, and can be installed separately.
 - Installation Steps are the same as for any standard Odoo Custom module
+- Some modules have dependencies on other modules that are from other repositories. If you are installing from Odoo App Store it will be automatically installed. But if you are manually installing it will be required to install the dependencies. More information can be found in the README.md file of each module.
 
 ## Note WIP 🚧
 Please note this repository is WIP. You can however start using the modules. You can also contribute to the development of the modules.
